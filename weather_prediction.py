@@ -37,6 +37,6 @@ train_data_y = np.array(train_data_y)
 reg = LinearRegression().fit(train_data_x, train_data_y)
 
 pred = reg.predict(train_data[-n+1:].flatten()[np.newaxis, :])[0]
-print(f'::set-output name=average temperature for {end.date()+timedelta(days=1)}::{round(pred[0], 1)}')
-print(f'::set-output name=minimum temperature for {end.date()+timedelta(days=1)}::{round(pred[1], 1)}')
-print(f'::set-output name=maximum temperature for {end.date()+timedelta(days=1)}::{round(pred[2], 1)}')
+
+print(f'{end.date()+timedelta(days=1)} Avg:{round(pred[0], 1)}, Min:{round(pred[1], 1)}, Max:{round(pred[2], 1)}')
+

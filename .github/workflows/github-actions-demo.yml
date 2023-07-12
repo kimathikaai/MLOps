@@ -23,6 +23,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
+      - name: Lint
+        run: |
+        	pylint weather_prediction.py
+          pylint weather_prediction_test.py
+
+      - name: Test
+        run: |
+          python -m pytest weather_prediction_test.py
 
       - name: Execute Python Script for weather prediction
-        run: python weather_prediction.py
+        run: output=$(python weather_prediction.py)
+          echo "::set-output name=pred_weather::$output"
+        id: step1
+
+      - name: Print Weather Predictions
+        run: echo "${{ steps.step1.outputs.pred_weather }}
