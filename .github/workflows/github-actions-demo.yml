@@ -28,11 +28,13 @@ jobs:
           python -m pytest weather_prediction_test.py
 
       - name: Lint
-        run: pylint weather_prediction.py
+        run: |
+          pylint weather_prediction.py
           pylint weather_prediction_test.py
         continue-on-error: true
 
       - name: Execute Python Script for weather prediction
-        run: export output=$(python weather_prediction.py)
+        run: |
+          export output=$(python weather_prediction.py)
           echo "Prediction for $output"
 
