@@ -1,1 +1,2 @@
 meteostat==1.6.5
+scikit-learn

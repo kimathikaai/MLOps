@@ -1,6 +1,7 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from meteostat import Point, Daily
 import numpy as np
+from sklearn.linear_model import LinearRegression
 
 # Set time period
 start = datetime(2018, 1, 1)
@@ -23,9 +24,19 @@ train_data = np.array(data[['tavg', 'tmin', 'tmax']].values)
 
 # Define sequence length in days
 n = 14
-train_data_seq = []
-for i in range(len(train_data)-n+1):
-    train_data_seq.append(train_data[i:i+n])
+train_data_x = []
+train_data_y = []
 
-train_data_seq = np.array(train_data_seq)
-print(train_data_seq.shape)
+for i in range(len(train_data)-n+1):
+    train_data_x.append(train_data[i:i+n-1].flatten())
+    train_data_y.append(train_data[i+n-1])
+
+train_data_x = np.array(train_data_x)
+train_data_y = np.array(train_data_y)
+
+reg = LinearRegression().fit(train_data_x, train_data_y)
+
+pred = reg.predict(train_data[-n+1:].flatten()[np.newaxis, :])[0]
+print(f'::set-output name=average temperature for {end.date()+timedelta(days=1)}::{round(pred[0], 1)}')
+print(f'::set-output name=minimum temperature for {end.date()+timedelta(days=1)}::{round(pred[1], 1)}')
+print(f'::set-output name=maximum temperature for {end.date()+timedelta(days=1)}::{round(pred[2], 1)}')
