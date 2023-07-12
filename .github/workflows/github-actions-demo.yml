@@ -28,8 +28,7 @@ jobs:
           python -m pytest weather_prediction_test.py
 
       - name: Lint
-        run: |
-        	pylint weather_prediction.py
+        run: pylint weather_prediction.py
           pylint weather_prediction_test.py
 
       - name: Execute Python Script for weather prediction
