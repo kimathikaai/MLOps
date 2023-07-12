@@ -38,4 +38,4 @@ jobs:
         id: step1
 
       - name: Print Weather Predictions
-        run: echo "${{ steps.step1.outputs.pred_weather }}
+        run: echo "${{ steps.step1.outputs.pred_weather }}"
