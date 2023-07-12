@@ -37,4 +37,14 @@ jobs:
         run: |
           export output=$(python weather_prediction.py)
           echo "Prediction for $output"
+          histchars=
+          start_delimiter="<!-- start-quote -->"
+          end_delimiter="<!-- end-quote -->"
+          sed -i "/$start_delimiter/,/$end_delimiter/d" README.md
+          printf "$start_delimiter\nPrediction for $output\n$end_delimiter\n" >> README.md
+          git diff
+          git config --local user.email "github-actions@example.com"
+          git config --local user.name "GitHub Actions"
+          git diff --quiet || (git add README.md && git commit -m "Added new quote to README")
+          git push origin main
 
