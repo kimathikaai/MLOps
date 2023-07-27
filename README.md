@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2023-07-27 Avg:19.9, Min:13.1, Max:26.6
+Prediction for 2023-07-28 Avg:21.6, Min:14.8, Max:28.4
 <!-- end-quote -->
