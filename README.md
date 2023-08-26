@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2023-08-26 Avg:17.9, Min:12.4, Max:23.4
+Prediction for 2023-08-27 Avg:16.4, Min:11.0, Max:21.9
 <!-- end-quote -->
