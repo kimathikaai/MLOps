@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2023-10-26 Avg:13.0, Min:9.3, Max:16.7
+Prediction for 2023-10-27 Avg:12.8, Min:8.7, Max:17.0
 <!-- end-quote -->
