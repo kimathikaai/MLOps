@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2023-11-22 Avg:2.8, Min:-0.1, Max:5.5
+Prediction for 2023-11-23 Avg:5.6, Min:2.1, Max:9.2
 <!-- end-quote -->
