@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2023-12-05 Avg:-0.1, Min:-3.4, Max:3.5
+Prediction for 2023-12-06 Avg:-2.3, Min:-7.4, Max:2.9
 <!-- end-quote -->
