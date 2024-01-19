@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2024-01-19 Avg:-8.0, Min:-11.1, Max:-5.2
+Prediction for 2024-01-20 Avg:-11.1, Min:-14.7, Max:-7.6
 <!-- end-quote -->
