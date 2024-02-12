@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2024-02-12 Avg:-0.2, Min:-6.4, Max:6.4
+Prediction for 2024-02-13 Avg:-2.8, Min:-7.3, Max:1.1
 <!-- end-quote -->
