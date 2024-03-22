@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2024-03-22 Avg:-3.2, Min:-7.3, Max:0.9
+Prediction for 2024-03-23 Avg:-3.3, Min:-8.0, Max:1.4
 <!-- end-quote -->
