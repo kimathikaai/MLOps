@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2024-04-12 Avg:7.7, Min:3.5, Max:12.5
+Prediction for 2024-04-13 Avg:9.1, Min:3.7, Max:14.3
 <!-- end-quote -->
