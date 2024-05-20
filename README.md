@@ -1,3 +1,3 @@
 <!-- start-quote -->
-Prediction for 2024-05-20 Avg:19.8, Min:14.3, Max:25.6
+Prediction for 2024-05-21 Avg:16.4, Min:12.2, Max:21.6
 <!-- end-quote -->
